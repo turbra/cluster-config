@@ -8,5 +8,5 @@ resources:
   - ../../components/argocd/authentication
   - ../../components/argocd/monitoring
   - ../../components/argocd/ingress
-  - ../../components/argocd/image-registry
+  #- ../../components/argocd/image-registry
   - ../../components/argocd/certificates
