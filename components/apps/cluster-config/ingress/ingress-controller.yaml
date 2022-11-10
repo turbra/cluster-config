@@ -11,14 +11,17 @@ spec:
   httpEmptyRequestsPolicy: Respond
   httpErrorCodePages:
     name: ''
-  replicas: 3
+  replicas: 2
   tuningOptions: {}
   unsupportedConfigOverrides: null
   nodePlacement:
-    tolerations:
+      nodeSelector:
+        matchLabels:
+          node-role.kubernetes.io/infra: ""
+  tolerations:
     - effect: NoSchedule
       key: node-role.kubernetes.io/infra
-      operator: Exists
-    nodeSelector:
-      matchLabels:
-        node-role.kubernetes.io/infra: ""
+      value: reserved
+    - effect: NoExecute
+      key: node-role.kubernetes.io/infra
+      value: reserved
