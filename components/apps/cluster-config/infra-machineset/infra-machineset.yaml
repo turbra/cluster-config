@@ -38,7 +38,7 @@ spec:
           - workers
           apiVersion: ovirtproviderconfig.machine.openshift.io/v1beta1
           auto_pinning_policy: none
-          cluster_id: 4a8614f3-b96a-4b9f-9710-9f42b8453653
+          cluster_id: 17109ed4-4a40-11ed-b892-00163e3275f9
           cpu:
             cores: 4
             sockets: 2
