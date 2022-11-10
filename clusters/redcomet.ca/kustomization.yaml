@@ -6,7 +6,7 @@ resources:
   - ../../components/argocd/storage-classes
   - ../../components/argocd/infra-machineset
   - ../../components/argocd/authentication
-  #- ../../components/argocd/monitoring
+  - ../../components/argocd/monitoring
   #- ../../components/argocd/ingress
   #- ../../components/argocd/image-registry
-  #- ../../components/argocd/certificates
+  - ../../components/argocd/certificates
