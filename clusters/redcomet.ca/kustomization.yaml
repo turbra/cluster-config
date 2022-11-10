@@ -8,5 +8,5 @@ resources:
   - ../../components/argocd/infra-machineset
   - ../../components/argocd/monitoring
   - ../../components/argocd/ingress
-  - ../../components/argocd/registry
+  - ../../components/argocd/image-registry
   - ../../components/argocd/certificates
