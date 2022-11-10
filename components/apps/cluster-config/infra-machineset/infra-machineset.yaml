@@ -2,24 +2,24 @@ apiVersion: machine.openshift.io/v1beta1
 kind: MachineSet
 metadata:
   labels:
-    machine.openshift.io/cluster-api-cluster: ocp-fsv4h
+    machine.openshift.io/cluster-api-cluster: ocp-m7zn5
     machine.openshift.io/cluster-api-machine-role: infra
     machine.openshift.io/cluster-api-machine-type: infra
-  name: ocp-fsv4h-infra
+  name: ocp-m7zn5-infra
   namespace: openshift-machine-api
 spec:
   replicas: 3
   selector:
     matchLabels:
-      machine.openshift.io/cluster-api-cluster: ocp-fsv4h
-      machine.openshift.io/cluster-api-machineset: ocp-fsv4h-infra
+      machine.openshift.io/cluster-api-cluster: ocp-m7zn5
+      machine.openshift.io/cluster-api-machineset: ocp-m7zn5-infra
   template:
     metadata:
       labels:
-        machine.openshift.io/cluster-api-cluster: ocp-fsv4h
+        machine.openshift.io/cluster-api-cluster: ocp-m7zn5
         machine.openshift.io/cluster-api-machine-role: infra
         machine.openshift.io/cluster-api-machine-type: infra
-        machine.openshift.io/cluster-api-machineset: ocp-fsv4h-infra
+        machine.openshift.io/cluster-api-machineset: ocp-m7zn5-infra
     spec:
       metadata:
         labels:
@@ -38,7 +38,7 @@ spec:
           - workers
           apiVersion: ovirtproviderconfig.machine.openshift.io/v1beta1
           auto_pinning_policy: none
-          cluster_id: 17109ed4-4a40-11ed-b892-00163e3275f9
+          cluster_id: 4a8614f3-b96a-4b9f-9710-9f42b8453653
           cpu:
             cores: 4
             sockets: 2
@@ -53,7 +53,7 @@ spec:
           name: ""
           os_disk:
             size_gb: 120
-          template_name: ocp-fsv4h-rhcos
+          template_name: ocp-m7zn5-rhcos
           type: server
           userDataSecret:
             name: worker-user-data
