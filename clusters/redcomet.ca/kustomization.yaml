@@ -9,4 +9,4 @@ resources:
   - ../../components/argocd/monitoring
   - ../../components/argocd/ingress
   #- ../../components/argocd/image-registry
-  - ../../components/argocd/certificates
+  #- ../../components/argocd/certificates
