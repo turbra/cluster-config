@@ -1,0 +1,22 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: patch-proxy
+spec:
+  template:
+    spec:
+      containers:
+        - image: image-registry.openshift-image-registry.svc:5000/openshift/cli:latest
+          command:
+            - /bin/bash
+            - -c
+            - |
+              #!/usr/bin/env bash
+              oc patch proxy/cluster \
+                --type=merge \
+                --patch='{"spec":{"trustedCA":{"name":"custom-ca"}}}'
+          imagePullPolicy: Always
+          name: patch-proxy
+      dnsPolicy: ClusterFirst
+      restartPolicy: Never
+      terminationGracePeriodSeconds: 30

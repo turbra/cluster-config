@@ -1,0 +1,36 @@
+apiVersion: v1
+data:
+  ca-bundle.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIE1zCCAz+gAwIBAgIQRFD27d4nLe8JfL6OQjmbCjANBgkqhkiG9w0BAQsFADCB
+    gzEeMBwGA1UEChMVbWtjZXJ0IGRldmVsb3BtZW50IENBMSwwKgYDVQQLDCNjcm9i
+    YkBtb25zdHJvLmhvbWUubGFuIChDYXNleSBSb2JiKTEzMDEGA1UEAwwqbWtjZXJ0
+    IGNyb2JiQG1vbnN0cm8uaG9tZS5sYW4gKENhc2V5IFJvYmIpMB4XDTIwMDgxMDIy
+    NDI0MFoXDTMwMDgxMDIyNDI0MFowgYMxHjAcBgNVBAoTFW1rY2VydCBkZXZlbG9w
+    bWVudCBDQTEsMCoGA1UECwwjY3JvYmJAbW9uc3Ryby5ob21lLmxhbiAoQ2FzZXkg
+    Um9iYikxMzAxBgNVBAMMKm1rY2VydCBjcm9iYkBtb25zdHJvLmhvbWUubGFuIChD
+    YXNleSBSb2JiKTCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBALm/Tiy1
+    JEsc5s5wy3j37kIYigO+oohZOfVFi/pc/XESi1ktPzGeJJ3kuorraXCGA0opT2ww
+    0CKzBZ45685ChOUs94t62+CkbUrvRNdOBd9I7/+89Vq13O8OAqRjpu6XyGVU02IY
+    ko7DKIPMCWuvrqa4qp5cI5K6OcKJ7q9+VzKWO1YwaOOOm5ojczQ/oadCEPle54VP
+    8d7ZkwfBop5HllY+GKdgRsGNcTu3iBQ0mvy3df+RjPSWIb9U4Q68n6sCQPwDz/Yt
+    iDH0o42rkQTFR4x38TIl7QaekZmroTtPZfaZKk+dUEui2aaDB6rVqKVgYRTUm2YP
+    if0oYELdCF7Yd+FMtgOeQjFnMSh7+PygLSefCrFPSnmfWtlGCpmS015Aq6y9SXb+
+    autbNSV9xYMUmPeILTyGmURldXtSdfGMNGNq2Iu9o2zK4Or0OVEXAY/17xy7n05t
+    o3iK9XiHrZccvuxjG56zUUtxAwwPES+Ya4DHa5eFpDvaqqag+6GWfOwJ1wIDAQAB
+    o0UwQzAOBgNVHQ8BAf8EBAMCAgQwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHQ4E
+    FgQUB4P7VrSpDjSn/XcifpNzEF+spAIwDQYJKoZIhvcNAQELBQADggGBAHnnNrZN
+    xO4jkHN9qAkp5XUrjbnJGZkAcHl35naommFQ2/d3jyYhnquveI8VvDtfL6bD85nD
+    B2UfMSZyhtz+YmicTjQNVHjNZwcvmDhevRrwb8d40prF8jVHH/ewiqAS74OIFkzK
+    VckbWpLSk7YYgCysstX/Y+H9YHEjJKbZRHLBG3U2Dv66pjzbxqw+0zbnKxFRZ086
+    2RRtiheBZ6klYtxY6eWLzr24LMnuWxIkaQpyekoXwyIpqqI69sIt0ccPL/86nMRu
+    AGiQU+xFNaw3XB5ewfLMOEb3eywuRlhuwbCdzDYbFSFagayOangtdQ9YlchMNh9L
+    ndnmtt7qCxxxSHvfAhqHcIEFuOF9hQpiF/+WdYUxB2iiCD7dzrBH8nwD5nuzF1Lm
+    +VxqFJlMgyar6BuLfif0OAt0tsy0SVo5m45TOI7gXNtKwupCLXszXgJEkEQXutxh
+    R8oEAIDBjTj8cvLEiBvtra0R3NvAdfh7rZAPG6+HamrTCGt2sTYBMhgaRg==
+    -----END CERTIFICATE-----
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: custom-ca
+  namespace: openshift-config

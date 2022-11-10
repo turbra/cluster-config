@@ -1,0 +1,23 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: patch-ingress
+spec:
+  template:
+    spec:
+      containers:
+        - image: image-registry.openshift-image-registry.svc:5000/openshift/cli:latest
+          command:
+            - /bin/bash
+            - -c
+            - |
+              #!/usr/bin/env bash
+              oc patch IngressController.operator default \
+                --type=merge -p \
+                '{"spec":{"defaultCertificate": {"name": "ingress-cert"}}}' \
+                -n openshift-ingress-operator 
+          imagePullPolicy: Always
+          name: patch-ingress
+      dnsPolicy: ClusterFirst
+      restartPolicy: Never
+      terminationGracePeriodSeconds: 30

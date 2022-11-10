@@ -1,0 +1,24 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: patch-apiserver
+spec:
+  template:
+    spec:
+      containers:
+        - image: image-registry.openshift-image-registry.svc:5000/openshift/cli:latest
+          command:
+            - /bin/bash
+            - -c
+            - |
+              #!/usr/bin/env bash
+              oc patch apiserver cluster \
+                --type=merge -p \
+                '{"spec":{"servingCerts": {"namedCertificates":
+                [{"names": ["api.ocp.redcomet.ca"], 
+                "servingCertificate": {"name": "api-cert"}}]}}}'
+          imagePullPolicy: Always
+          name: patch-apiserver
+      dnsPolicy: ClusterFirst
+      restartPolicy: Never
+      terminationGracePeriodSeconds: 30

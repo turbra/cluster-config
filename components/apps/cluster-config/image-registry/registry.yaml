@@ -1,0 +1,34 @@
+apiVersion: imageregistry.operator.openshift.io/v1
+kind: Config
+metadata:
+  finalizers:
+    - imageregistry.operator.openshift.io/finalizer
+  name: cluster
+spec:
+  affinity:
+    podAntiAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - podAffinityTerm:
+          namespaces:
+          - openshift-image-registry
+          topologyKey: kubernetes.io/hostname
+        weight: 100
+  tolerations:
+  - effect: NoSchedule
+    key: node-role.kubernetes.io/infra
+    operator: Exists
+  logLevel: Normal
+  rolloutStrategy: RollingUpdate
+  operatorLogLevel: Normal
+  requests:
+    read:
+      maxWaitInQueue: 0s
+    write:
+      maxWaitInQueue: 0s
+  observedConfig: null
+  managementState: Managed
+  proxy: {}
+  unsupportedConfigOverrides: null
+  storage:
+    managementState: Managed
+  replicas: 3
