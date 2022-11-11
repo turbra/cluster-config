@@ -2,6 +2,7 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: patch-ingress
+  namespace: openshift-ingress-operator
 spec:
   template:
     spec:
@@ -15,7 +16,7 @@ spec:
               oc patch IngressController.operator default \
                 --type=merge -p \
                 '{"spec":{"defaultCertificate": {"name": "ingress-cert"}}}' \
-                -n openshift-ingress-operator 
+                -n openshift-ingress-operator
           imagePullPolicy: Always
           name: patch-ingress
       dnsPolicy: ClusterFirst
