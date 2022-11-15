@@ -5,4 +5,4 @@ resources:
 - htpasswd-sealedsecret.yaml
 - htpasswd-oauth.yaml
 - crobb-crb.yaml
-- argoadmins-group.yaml
+- cluster-admins-group.yaml
