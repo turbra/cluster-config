@@ -1,0 +1,29 @@
+apiVersion: config.openshift.io/v1
+kind: OAuth
+metadata:
+  name: cluster
+spec:
+  identityProviders:
+  - name: HTPasswd
+    mappingMethod: claim
+    type: HTPasswd
+    htpasswd:
+      fileData:
+        name: htpasswd-secret
+  - name: keycloak
+    mappingMethod: claim
+    type: OpenID
+    openID:
+      ca:
+        name: openid-ca-vf64m
+        claims:
+          email:
+            - email
+          name:
+            - name
+          preferredUsername:
+            - preferred_username
+      clientID: keycloak
+      clientSecret:
+        name: openid-client-secret-tjp7g
+      issuer: https://keycloak-rhsso.apps.ocp.redcomet.ca/auth/realms/redcomet
