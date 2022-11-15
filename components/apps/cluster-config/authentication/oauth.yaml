@@ -1,29 +1,36 @@
 apiVersion: config.openshift.io/v1
 kind: OAuth
 metadata:
+  annotations:
+    include.release.openshift.io/ibm-cloud-managed: "true"
+    include.release.openshift.io/self-managed-high-availability: "true"
+    include.release.openshift.io/single-node-developer: "true"
+    release.openshift.io/create-only: "true"
+  labels:
+    app.kubernetes.io/instance: cluster-config-authentication
   name: cluster
 spec:
   identityProviders:
-  - name: HTPasswd
-    mappingMethod: claim
-    type: HTPasswd
-    htpasswd:
+  - htpasswd:
       fileData:
         name: htpasswd-secret
-  - name: keycloak
     mappingMethod: claim
-    type: OpenID
+    name: HTPasswd
+    type: HTPasswd
+  - mappingMethod: claim
+    name: openid
     openID:
       ca:
         name: openid-ca-vf64m
-        claims:
-          email:
-            - email
-          name:
-            - name
-          preferredUsername:
-            - preferred_username
+      claims:
+        email:
+        - email
+        name:
+        - name
+        preferredUsername:
+        - preferred_username
       clientID: keycloak
       clientSecret:
         name: openid-client-secret-tjp7g
       issuer: https://keycloak-rhsso.apps.ocp.redcomet.ca/auth/realms/redcomet
+    type: OpenID

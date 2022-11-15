@@ -7,3 +7,4 @@ elastic
 logging
 pipelines
 rhsso
+*.bak
