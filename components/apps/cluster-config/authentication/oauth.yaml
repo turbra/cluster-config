@@ -18,7 +18,7 @@ spec:
     name: HTPasswd
     type: HTPasswd
   - mappingMethod: claim
-    name: openid
+    name: keycloak
     openID:
       ca:
         name: openid-ca-vf64m
