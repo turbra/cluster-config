@@ -16,7 +16,12 @@ spec:
   tolerations:
   - effect: NoSchedule
     key: node-role.kubernetes.io/infra
-    operator: Exists
+    value: reserved
+  - effect: NoExecute
+    key: node-role.kubernetes.io/infra
+    value: reserved
+  nodeSelector:
+    node-role.kubernetes.io/infra: ""
   logLevel: Normal
   rolloutStrategy: RollingUpdate
   operatorLogLevel: Normal
