@@ -31,4 +31,4 @@ spec:
   unsupportedConfigOverrides: null
   storage:
     managementState: Managed
-  replicas: 3
+  replicas: 1
