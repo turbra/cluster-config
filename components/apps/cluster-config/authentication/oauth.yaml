@@ -17,26 +17,20 @@ spec:
     mappingMethod: claim
     name: HTPasswd
     type: HTPasswd
-  - name: rhsso
-    mappingMethod: claim
-    type: OpenID
+  - mappingMethod: claim
+    name: rhsso
     openID:
-      clientID: openshift
-      issuer: https://keycloak-rhsso.apps.ocp.redcomet.ca/auth/realms/openshift
-      clientSecret:
-        name: openid-client-secret
       ca:
-        name: openidcacrt
-      extraScopes:
-        - email
-        - profile
-      extraAuthorizeParameters:
-        include_granted_scopes: "true"
+        name: openid-ca-xb8db
       claims:
-        preferredUsername:
-          - preferred_username
-          - email
-        name:
-          - name
         email:
-          - email
+        - email
+        name:
+        - name
+        preferredUsername:
+        - preferred_username
+      clientID: openshift
+      clientSecret:
+        name: openid-client-secret-gdhvc
+      issuer: https://keycloak-rhsso.apps.ocp.redcomet.ca/auth/realms/openshift
+    type: OpenID
