@@ -22,16 +22,13 @@ spec:
     openID:
       ca:
         name: openid-ca-crt
-      claims:
-        email:
-        - email
-        name:
-        - nickname
-        - given_name
-        - name
-        preferredUsername:
-        - preferred_username
-        - email
+        claims:
+          email:
+            - email
+          name:
+            - name
+          preferredUsername:
+            - preferred_username
       clientID: openshift
       clientSecret:
         name: openid-client-secret
