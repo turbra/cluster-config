@@ -22,6 +22,7 @@ spec:
     type: OpenID
     openID:
       clientID: openshift
+      issuer: https://keycloak-rhsso.apps.ocp.redcomet.ca/auth/realms/openshift
       clientSecret:
         name: openid-client-secret
       ca:
