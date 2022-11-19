@@ -17,20 +17,3 @@ spec:
     mappingMethod: claim
     name: HTPasswd
     type: HTPasswd
-  - mappingMethod: claim
-    name: keycloak
-    openID:
-      ca:
-        name: openid-ca-vf64m
-      claims:
-        email:
-        - email
-        name:
-        - name
-        preferredUsername:
-        - preferred_username
-      clientID: keycloak
-      clientSecret:
-        name: openid-client-secret-tjp7g
-      issuer: https://keycloak-rhsso.apps.ocp.redcomet.ca/auth/realms/redcomet
-    type: OpenID
