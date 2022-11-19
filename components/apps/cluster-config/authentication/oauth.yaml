@@ -35,5 +35,5 @@ spec:
       clientID: openshift
       clientSecret:
         name: openid-client-secret
-      issuer: https://keycloak-rhsso.apps.ocp.redcomet.ca/auth/realms/redcomet
+      issuer: https://keycloak-rhsso.apps.ocp.redcomet.ca/auth/realms/redcomet/
     type: OpenID
