@@ -3,8 +3,6 @@ kind: Application
 metadata:
   name: cluster-config-certificates
   namespace: openshift-gitops
-  annotations:
-    argocd.argoproj.io/sync-options: ServerSideApply=true
 spec:
   destination:
     namespace: openshift-gitops
@@ -15,6 +13,8 @@ spec:
     repoURL: https://github.com/caseyrobb/cluster-config.git
     targetRevision: master
   syncPolicy:
+    syncOptions:
+    - ServerSideApply=true
     automated:
       selfHeal: true
       prune: true
