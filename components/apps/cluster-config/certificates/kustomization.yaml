@@ -6,7 +6,7 @@ resources:
 - custom-ca-cm.yaml
 - cluster-proxy.yaml
 - cluster-apiserver.yaml
-- default-ingresscontroller.yaml
+#- default-ingresscontroller.yaml
 #- patch-apiserver-job.yaml
 #- patch-ingress-job.yaml
 #- patch-proxy-job.yaml
