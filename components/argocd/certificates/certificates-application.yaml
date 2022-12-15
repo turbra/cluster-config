@@ -3,6 +3,8 @@ kind: Application
 metadata:
   name: cluster-config-certificates
   namespace: openshift-gitops
+  annotations:
+    argocd.argoproj.io/sync-options: ServerSideApply=true
 spec:
   destination:
     namespace: openshift-gitops

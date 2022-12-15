@@ -11,4 +11,4 @@ resources:
   - ../../components/argocd/image-registry
   - ../../components/argocd/compliance
   - ../../components/argocd/container-security
-  #- ../../components/argocd/certificates
+  - ../../components/argocd/certificates
