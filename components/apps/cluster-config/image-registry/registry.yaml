@@ -4,9 +4,15 @@ metadata:
   finalizers:
     - imageregistry.operator.openshift.io/finalizer
   name: cluster
-  annotations:
-    argocd.argoproj.io/sync-options: ServerSideApply=true
 spec:
+  affinity:
+    podAntiAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - podAffinityTerm:
+          namespaces:
+          - openshift-image-registry
+          topologyKey: kubernetes.io/hostname
+        weight: 100
   tolerations:
   - effect: NoSchedule
     key: node-role.kubernetes.io/infra
@@ -16,3 +22,18 @@ spec:
     value: reserved
   nodeSelector:
     node-role.kubernetes.io/infra: ""
+  logLevel: Normal		
+  rolloutStrategy: RollingUpdate		
+  operatorLogLevel: Normal		
+  requests:		
+    read:		
+      maxWaitInQueue: 0s		
+    write:		
+      maxWaitInQueue: 0s		
+  observedConfig: null		
+  managementState: Managed		
+  proxy: {}		
+  unsupportedConfigOverrides: null		
+  storage:		
+    managementState: Managed		
+  replicas: 1
