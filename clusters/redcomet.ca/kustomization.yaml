@@ -13,3 +13,4 @@ resources:
   - ../../components/argocd/container-security
   - ../../components/argocd/certificates
   - ../../components/argocd/grafana
+  - ../../components/argocd/elastic
