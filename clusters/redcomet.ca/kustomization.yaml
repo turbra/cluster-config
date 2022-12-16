@@ -12,3 +12,4 @@ resources:
   - ../../components/argocd/compliance
   - ../../components/argocd/container-security
   - ../../components/argocd/certificates
+  - ../../components/argocd/grafana
