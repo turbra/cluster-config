@@ -11,7 +11,7 @@ spec:
   source:
     path: components/apps/cluster-config/image-registry
     repoURL: https://github.com/caseyrobb/cluster-config.git
-    targetRevision: infra-ssa
+    targetRevision: master
   syncPolicy:
     automated:
       selfHeal: true
