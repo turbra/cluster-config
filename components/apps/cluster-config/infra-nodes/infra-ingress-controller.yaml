@@ -4,7 +4,7 @@ metadata:
   name: default
   namespace: openshift-ingress-operator
 spec:
-	nodePlacement:
+  nodePlacement:
     nodeSelector:
       matchLabels:
         node-role.kubernetes.io/infra: ""
