@@ -4,3 +4,5 @@ logging
 pipelines
 rhsso
 *.bak
+acs-config
+odf

@@ -4,6 +4,3 @@ kind: Kustomization
 resources:
 - infra-machineset.yaml
 - infra-mcp.yaml
-- infra-registry.yaml
-- infra-monitoring.yaml
-- infra-ingress-controller.yaml

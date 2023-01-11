@@ -4,11 +4,11 @@ kind: Kustomization
 resources:
   - ../../components/argocd/sealed-secrets
   - ../../components/argocd/storage-classes
+  - ../../components/argocd/infra-machineset
   - ../../components/argocd/authentication
   - ../../components/argocd/monitoring
   - ../../components/argocd/ingress
   - ../../components/argocd/image-registry
-  - ../../components/argocd/infra-nodes
   - ../../components/argocd/certificates
   - ../../components/argocd/compliance
   - ../../components/argocd/container-security
