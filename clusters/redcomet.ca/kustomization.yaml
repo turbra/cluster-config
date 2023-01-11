@@ -13,4 +13,4 @@ resources:
   - ../../components/argocd/compliance
   - ../../components/argocd/container-security
   - ../../components/argocd/grafana
-  - ../../components/argocd/elastic
+  #- ../../components/argocd/elastic
