@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cluster-config-infra-machineset
+  name: cluster-config-infra-nodes
   namespace: openshift-gitops
 spec:
   destination:
@@ -9,10 +9,12 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: cluster-config
   source:
-    path: components/apps/cluster-config/infra-machineset
+    path: components/apps/cluster-config/infra-nodes
     repoURL: https://github.com/caseyrobb/cluster-config.git
     targetRevision: master
   syncPolicy:
     automated:
       selfHeal: true
       prune: true
+    syncOptions:
+    - ServerSideApply=true
