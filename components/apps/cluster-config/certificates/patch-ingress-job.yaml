@@ -3,6 +3,8 @@ kind: Job
 metadata:
   name: patch-ingress
   namespace: openshift-ingress-operator
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
 spec:
   template:
     spec:
