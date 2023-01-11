@@ -17,20 +17,3 @@ spec:
     mappingMethod: claim
     name: HTPasswd
     type: HTPasswd
-  - mappingMethod: claim
-    name: rhsso
-    openID:
-      ca:
-        name: openid-ca-xb8db
-      claims:
-        email:
-        - email
-        name:
-        - name
-        preferredUsername:
-        - preferred_username
-      clientID: openshift
-      clientSecret:
-        name: openid-client-secret-gdhvc
-      issuer: https://keycloak-rhsso.apps.ocp.redcomet.ca/auth/realms/openshift
-    type: OpenID
