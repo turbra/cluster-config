@@ -5,10 +5,4 @@ metadata:
     argocd.argoproj.io/sync-options: ServerSideApply=true
   name: cluster
 spec:
-  identityProviders:
-  - htpasswd:
-      fileData:
-        name: htpasswd-secret
-    mappingMethod: claim
-    name: HTPasswd
-    type: HTPasswd
+  identityProviders: []
