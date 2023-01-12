@@ -1,7 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-resources:
-- ingress-controller.yaml
+#resources:
+#- ingress-controller.yaml
 
 patches:
   - target:
@@ -12,14 +12,5 @@ patches:
       - op: add
         path: /spec
         value:
-          nodePlacement:
-            nodeSelector:
-              matchLabels:
-                node-role.kubernetes.io/infra: ""
-            tolerations:
-            - effect: NoSchedule
-              key: node-role.kubernetes.io/infra
-              value: reserved
-            - effect: NoExecute
-              key: node-role.kubernetes.io/infra
-              value: reserved
+          defaultCertificate:
+            name: ingress-cert

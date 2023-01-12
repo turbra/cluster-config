@@ -4,3 +4,24 @@ kind: Kustomization
 resources:
 - infra-machineset.yaml
 - infra-mcp.yaml
+
+patches:
+	- target:
+      kind: IngressController
+      name: default
+      namespace: openshift-ingress-controller
+    patch: |-
+      - op: add
+        path: /spec
+        value:
+          nodePlacement:
+            nodeSelector:
+              matchLabels:
+                node-role.kubernetes.io/infra: ""
+            tolerations:
+            - effect: NoSchedule
+              key: node-role.kubernetes.io/infra
+              value: reserved
+            - effect: NoExecute
+              key: node-role.kubernetes.io/infra
+              value: reserved
