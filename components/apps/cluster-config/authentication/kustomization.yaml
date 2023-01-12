@@ -14,10 +14,4 @@ patches:
       version: v1
       kind: OAuth
       name: cluster
-    path: idp-patch2.json
-  - target:
-      group: config.openshift.io
-      version: v1
-      kind: OAuth
-      name: cluster
-    path: idp-patch3.json
+    path: sso-patch.json
