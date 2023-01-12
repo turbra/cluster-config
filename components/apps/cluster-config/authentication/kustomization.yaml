@@ -14,10 +14,10 @@ patches:
       version: v1
       kind: OAuth
       name: cluster
-    path: idp-patch2.json
+    path: idp-patch.json
   - target:
       group: config.openshift.io
       version: v1
       kind: OAuth
       name: cluster
-    path: idp-patch.json
+    path: idp-patch2.json
