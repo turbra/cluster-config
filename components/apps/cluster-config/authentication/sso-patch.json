@@ -1,7 +1,7 @@
 [
   {
     "op": "add",
-    "path": "/spec/identityProviders",
+    "path": "/spec/identityProviders/-",
     "value": [
       {
         "mappingMethod": "claim",
