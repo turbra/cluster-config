@@ -6,13 +6,4 @@ metadata:
 spec:
   defaultCertificate:
     name: ingress-cert
-  clientTLS:
-    clientCA:
-      name: ''
-    clientCertificatePolicy: ''
-  httpEmptyRequestsPolicy: Respond
-  httpErrorCodePages:
-    name: ''
   replicas: 3
-  tuningOptions: {}
-  unsupportedConfigOverrides: null

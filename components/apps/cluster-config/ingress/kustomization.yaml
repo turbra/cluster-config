@@ -1,16 +1,4 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-#resources:
-#- ingress-controller.yaml
-
-patches:
-  - target:
-      kind: IngressController
-      name: default
-      namespace: openshift-ingress-controller
-    patch: |-
-      - op: add
-        path: /spec
-        value:
-          defaultCertificate:
-            name: ingress-cert
+resources:
+- ingress-controller.yaml
