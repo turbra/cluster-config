@@ -4,19 +4,6 @@
     "path": "/spec/identityProviders",
     "value": [
       {
-        "htpasswd": { "fileData": { "name": "htpasswd-secret" } },
-        "mappingMethod": "claim",
-        "name": "HTPasswd",
-        "type": "HTPasswd"
-      }
-    ]
-  },
-
-  {
-    "op": "add",
-    "path": "/spec/identityProviders",
-    "value": [
-      {
         "mappingMethod": "claim",
         "name": "rhsso",
         "openID": {
@@ -31,6 +18,19 @@
           "issuer": "https://keycloak-rhsso.apps.ocp.redcomet.ca/auth/realms/openshift"
         },
         "type": "OpenID"
+      }
+    ]
+  },
+
+  {
+    "op": "add",
+    "path": "/spec/identityProviders",
+    "value": [
+      {
+        "htpasswd": { "fileData": { "name": "htpasswd-secret" } },
+        "mappingMethod": "claim",
+        "name": "HTPasswd",
+        "type": "HTPasswd"
       }
     ]
   }
