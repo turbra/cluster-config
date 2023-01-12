@@ -14,5 +14,4 @@ patchesStrategicMerge:
       version: v1
       kind: OAuth
       name: cluster
-    path: sso-patch.json
-    path: htpasswd-patch.json
+    path: idp-patch.json
