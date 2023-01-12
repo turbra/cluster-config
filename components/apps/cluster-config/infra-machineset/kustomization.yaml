@@ -6,7 +6,7 @@ resources:
 - infra-mcp.yaml
 
 patches:
-	- target:
+  - target:
       kind: IngressController
       name: default
       namespace: openshift-ingress-controller
