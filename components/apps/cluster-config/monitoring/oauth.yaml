@@ -1,0 +1,25 @@
+apiVersion: config.openshift.io/v1
+kind: OAuth
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-options: ServerSideApply=true
+  name: cluster
+spec:
+  identityProviders:
+  - mappingMethod: claim
+    name: rhsso
+    openID:
+      ca:
+        name: openid-ca-xb8db
+      claims:
+        email:
+        - email
+        name:
+        - name
+        preferredUsername:
+        - preferred_username
+      clientID: openshift
+      clientSecret:
+        name: openid-client-secret-gdhvc
+      issuer: https://keycloak-rhsso.apps.ocp.redcomet.ca/auth/realms/openshift
+    type: OpenID
