@@ -8,7 +8,7 @@ resources:
 - cluster-admins-group.yaml
 - cluster-admins-crb.yaml
 
-patchesStrategicMerge:
+patches:
   - target:
       group: config.openshift.io
       version: v1
