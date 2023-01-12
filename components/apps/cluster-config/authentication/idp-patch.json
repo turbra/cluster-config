@@ -1,7 +1,7 @@
 [
   {
-    "op": "add",
-    "path": "/spec/identityProviders",
+    "op": "replace",
+    "path": "/spec/identityProviders/0",
     "value": [
       {
         "htpasswd": { "fileData": { "name": "htpasswd-secret" } },
@@ -13,8 +13,8 @@
   },
 
   {
-    "op": "add",
-    "path": "/spec/identityProviders",
+    "op": "replace",
+    "path": "/spec/identityProviders/1",
     "value": [
       {
         "mappingMethod": "claim",
