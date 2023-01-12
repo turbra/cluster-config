@@ -5,4 +5,4 @@ metadata:
     argocd.argoproj.io/sync-options: ServerSideApply=true
   name: cluster
 spec:
-  identityProviders: []
+  identityProviders: {}
