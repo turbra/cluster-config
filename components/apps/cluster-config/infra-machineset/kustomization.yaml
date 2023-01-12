@@ -25,3 +25,21 @@ patches:
             - effect: NoExecute
               key: node-role.kubernetes.io/infra
               value: reserved
+  - target:
+      kind: Config
+      name: cluster
+      group: imageregistry.operator.openshift.io
+      version: v1
+    patch: |-
+      - op: add
+        path: /spec
+        value:
+          tolerations:
+          - effect: NoSchedule
+            key: node-role.kubernetes.io/infra
+            value: reserved
+          - effect: NoExecute
+            key: node-role.kubernetes.io/infra
+            value: reserved
+          nodeSelector:
+            node-role.kubernetes.io/infra: ""
