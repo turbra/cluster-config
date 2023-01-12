@@ -8,10 +8,11 @@ resources:
 - cluster-admins-group.yaml
 - cluster-admins-crb.yaml
 
-patches:
+patchesStrategicMerge:
   - target:
       group: config.openshift.io
       version: v1
       kind: OAuth
       name: cluster
-    path: idp-patch.json
+    path: sso-patch.json
+    path: htpasswd-patch.json
