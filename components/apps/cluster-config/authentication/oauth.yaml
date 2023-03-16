@@ -3,6 +3,8 @@ kind: OAuth
 metadata:
   labels:
     app.kubernetes.io/instance: cluster-config-authentication
+  annotations:
+    argocd.argoproj.io/sync-options: ServerSideApply=true,Validate=false
   name: cluster
 spec:
   identityProviders:

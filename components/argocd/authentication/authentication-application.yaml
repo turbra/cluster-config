@@ -13,8 +13,6 @@ spec:
     repoURL: https://github.com/caseyrobb/cluster-config.git
     targetRevision: master
   syncPolicy:
-    syncOptions:
-      - ServerSideApply=true
     automated:
       selfHeal: true
       prune: true
