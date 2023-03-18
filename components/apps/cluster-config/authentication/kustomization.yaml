@@ -8,10 +8,10 @@ resources:
 - cluster-admins-group.yaml
 - cluster-admins-crb.yaml
 
-patches:
-  - target:
-      group: config.openshift.io
-      version: v1
-      kind: OAuth
-      name: cluster
-    path: sso-patch.json
+#patches:
+#  - target:
+#      group: config.openshift.io
+#      version: v1
+#      kind: OAuth
+#      name: cluster
+#    path: sso-patch.json
