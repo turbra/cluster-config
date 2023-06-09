@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: cluster-config
   source:
-    path: clusters/redcomet.ca/
+    path: clusters/ovirt/
     repoURL: https://github.com/caseyrobb/cluster-config.git
     targetRevision: master
   syncPolicy:

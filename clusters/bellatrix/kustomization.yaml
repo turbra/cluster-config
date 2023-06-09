@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../components/argocd/sealed-secrets
+  - ../../components/argocd/authentication
+  #- ../../components/argocd/monitoring
+  #- ../../components/argocd/ingress
+  #- ../../components/argocd/image-registry
+  #- ../../components/argocd/certificates
+  #- ../../components/argocd/compliance
+  #- ../../components/argocd/container-security
+  #- ../../components/argocd/grafana
+  #- ../../components/argocd/elastic
