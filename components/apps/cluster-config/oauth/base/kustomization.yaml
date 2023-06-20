@@ -1,0 +1,9 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+resources:
+- htpasswd-sealedsecret.yaml
+- oauth.yaml
+- crobb-crb.yaml
+- cluster-admins-group.yaml
+- cluster-admins-crb.yaml

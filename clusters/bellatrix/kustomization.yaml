@@ -3,8 +3,8 @@ kind: Kustomization
 
 resources:
   - ../../components/argocd/sealed-secrets
-  - ../../components/argocd/oauth
-  #- ../../components/argocd/monitoring
+  - ../../components/argocd/oauth/overlays/sno
+  - ../../components/argocd/monitoring/overlays/sno
   #- ../../components/argocd/ingress
   #- ../../components/argocd/image-registry
   #- ../../components/argocd/certificates

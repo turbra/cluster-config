@@ -5,8 +5,8 @@ resources:
   - ../../components/argocd/sealed-secrets
   - ../../components/argocd/storage-classes
   - ../../components/argocd/infra-machineset
-  - ../../components/argocd/oauth
-  - ../../components/argocd/monitoring
+  - ../../components/argocd/oauth/overlays/ovirt
+  - ../../components/argocd/monitoring/overlays/ovirt
   - ../../components/argocd/ingress
   - ../../components/argocd/image-registry
   - ../../components/argocd/certificates
