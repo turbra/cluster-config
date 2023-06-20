@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: cluster-config
   source:
-    path: components/apps/cluster-config/monitoring
+    path: PATCH_ME
     repoURL: https://github.com/caseyrobb/cluster-config.git
     targetRevision: master
   syncPolicy:
