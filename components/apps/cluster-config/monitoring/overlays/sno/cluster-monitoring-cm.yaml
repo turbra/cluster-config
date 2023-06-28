@@ -15,6 +15,8 @@ data:
            requests:
              storage: 40Gi
     alertmanagerMain:
+      retention: 7d
+      enableUserAlertmanagerConfig: true
       volumeClaimTemplate:
        spec:
          storageClassName: lvms-vg1
