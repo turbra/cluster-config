@@ -14,3 +14,11 @@ data:
          resources:
            requests:
              storage: 40Gi
+    alertmanagerMain:
+      volumeClaimTemplate:
+       spec:
+         storageClassName: lvms-vg1
+         volumeMode: Filesystem
+         resources:
+           requests:
+             storage: 5Gi
