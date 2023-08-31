@@ -5,6 +5,3 @@ resources:
 - ../../components/argocd/compliance
 - ../../components/argocd/container-security
 - ../../components/argocd/acs
-- ../../components/argocd/sealed-secrets
-- ../../components/argocd/oauth/base
-
