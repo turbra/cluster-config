@@ -10,7 +10,7 @@ spec:
   project: cluster-config
   source:
     path: PATCH_ME
-    repoURL: https://github.com/caseyrobb/cluster-config.git
+    repoURL: https://github.com/turbra/cluster-config.git
     targetRevision: master
   syncPolicy:
     automated:
