@@ -6,4 +6,4 @@ resources:
 - oauth.yaml
 - crobb-crb.yaml
 - cluster-admins-group.yaml
-- cluster-admins-crb.yaml
+- cluster-admins-turbra.yaml
