@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cluster-config-certificates
+  name: banner
   namespace: openshift-gitops
 spec:
   destination:
