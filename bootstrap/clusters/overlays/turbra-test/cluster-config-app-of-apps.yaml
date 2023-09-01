@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: cluster-config
   source:
-    path: clusters/rhpds/
+    path: clusters/turbra-test/
     repoURL: https://github.com/turbra/cluster-config.git
     targetRevision: master
   syncPolicy:
