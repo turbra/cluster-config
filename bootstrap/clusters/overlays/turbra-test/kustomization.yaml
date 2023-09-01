@@ -6,4 +6,3 @@ bases:
 
 resources:
 - cluster-config-app-of-apps.yaml
-- namespace-app-of-apps.yaml
