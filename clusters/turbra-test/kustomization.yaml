@@ -5,6 +5,6 @@ resources:
   #- ../../components/argocd/compliance
   #- ../../components/argocd/container-security
   #- ../../components/argocd/acs
-- ../../components/argocd/banner
+  #- ../../components/argocd/banner
   #- ../../components/argocd/namespace
 #- ../../components/argocd/defrag-etcd
