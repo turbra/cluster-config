@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: cluster-config
   source:
-    path: components/apps/operators/container-security/overlays/stable-3.8
+    path: components/apps/operators/container-security/overlays/stable-3.9
     repoURL: https://github.com/turbra/cluster-config.git
     targetRevision: master
   syncPolicy:
