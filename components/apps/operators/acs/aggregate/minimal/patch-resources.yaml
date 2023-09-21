@@ -20,12 +20,3 @@
 - op: replace
   path: /spec/scanner/analyzer/scaling/replicas
   value: 2
-
-- op: add
-  path: /spec/central-db/resources
-  value:
-    limits:
-      memory: 2Gi
-    requests:
-      cpu: 500m
-      memory: 1Gi
