@@ -18,6 +18,15 @@ spec:
     persistence:
       persistentVolumeClaim:
         claimName: stackrox-db
+    db:
+      resources:
+        limits:
+          cpu: '2'
+          memory: 8Gi
+        requests:
+          cpu: '1'
+          memory: 4Gi
+      isEnabled: Default
   egress:
     connectivityPolicy: Online
   scanner:
