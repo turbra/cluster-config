@@ -15,6 +15,15 @@ spec:
         enabled: false
       route:
         enabled: true
+    db:
+      resources:
+        limits:
+          cpu: '2'
+          memory: 8Gi
+        requests:
+          cpu: '1'
+          memory: 4Gi
+      isEnabled: Default
     persistence:
       persistentVolumeClaim:
         claimName: stackrox-db
