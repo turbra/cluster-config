@@ -1,4 +1,6 @@
 # Note this is resource reduced, this should not be taken as a production ready installation
+# Note the db block is configured to use lower than recommended resource requests and limits, please adjust for production use.
+# https://docs.openshift.com/acs/4.2/installing/acs-default-requirements.html
 apiVersion: platform.stackrox.io/v1alpha1
 kind: Central
 metadata:
