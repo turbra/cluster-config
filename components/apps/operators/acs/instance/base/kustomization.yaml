@@ -12,4 +12,3 @@ resources:
   - central.yaml
   - create-cluster-init-bundle-job.yaml
   - secured-cluster.yaml
-  - sensors-deployment.yaml
