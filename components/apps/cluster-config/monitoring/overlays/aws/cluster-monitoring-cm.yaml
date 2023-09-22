@@ -10,7 +10,7 @@ data:
         node-role.kubernetes.io/infra: ""
       volumeClaimTemplate:
         metadata:
-          name: ntx-alertmanager-claim
+          name: aws-alertmanager-claim
         spec:
           storageClassName: gp3-csi
           resources:
@@ -21,7 +21,7 @@ data:
         node-role.kubernetes.io/infra: ""
       volumeClaimTemplate:
           metadata:
-            name: ntx-prometheus-claim
+            name: aws-prometheus-claim
           spec:
             storageClassName: gp3-csi
             resources:
