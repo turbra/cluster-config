@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: cluster-config
   source:
-    path: PATCH_ME
+    path: components/apps/cluster-config/monitoring/overlays/aws
     repoURL: https://github.com/turbra/cluster-config.git
     targetRevision: master
   syncPolicy:

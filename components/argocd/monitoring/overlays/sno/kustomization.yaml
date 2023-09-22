@@ -14,4 +14,4 @@ patches:
   patch: |-
     - op: replace
       path: /spec/source/path
-      value: components/apps/cluster-config/monitoring/overlays/sno
+      value: components/apps/cluster-config/monitoring/overlays/aws
