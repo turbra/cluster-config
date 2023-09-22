@@ -3,10 +3,10 @@ kind: ConsoleNotification
 metadata:
   name: banner
 spec:
-  text: "${ENV_NAME} Cluster: ${CLUSTER_NAME}"
+  text: "Turbra Lab"
   location: BannerTop
   color: '#fff'
   backgroundColor: 'F28C28'
   link:
-    href: https://console.redhat.com/openshift/details/${CLUSTER_ID}
-    text: "(${CLUSTER_ID})"
+    href: https://github.com/turbra/cluster-config
+    text: "cluster-config"
