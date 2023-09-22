@@ -1,9 +1,0 @@
-- op: add
-  path: /spec/sensor/resources
-  value:
-    limits:
-      cpu: 2
-      memory: 2Gi
-    requests:
-      cpu: 500m
-      memory: 512Mi
