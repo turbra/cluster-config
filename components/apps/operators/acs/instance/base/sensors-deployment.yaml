@@ -1,16 +1,9 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: sensor
-  namespace: stackrox
-spec:
-  template:
-    spec:
-      containers:
-        resources:
-          limits:
-            cpu: '2'
-            memory: 4Gi
-          requests:
-            cpu: '1'
-            memory: 2Gi
+- op: add
+  path: /spec/sensor/resources
+  value:
+    limits:
+      cpu: 2
+      memory: 2Gi
+    requests:
+      cpu: 500m
+      memory: 512Mi
