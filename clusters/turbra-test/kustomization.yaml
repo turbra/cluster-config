@@ -8,4 +8,4 @@ resources:
 #- ../../components/argocd/banner
   #- ../../components/argocd/namespace
 #- ../../components/argocd/defrag-etcd
-- ../../components/argocd/monitoring/base
+- ../../components/argocd/monitoring
