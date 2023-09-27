@@ -9,3 +9,4 @@ resources:
 #- ../../components/argocd/namespace
 #- ../../components/argocd/defrag-etcd
 #- ../../components/argocd/monitoring/overlays/aws
+#- ../../components/argocd/logging
