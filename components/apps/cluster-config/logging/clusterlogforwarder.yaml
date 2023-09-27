@@ -9,11 +9,21 @@ spec:
       secret:
         name: vector-splunk-secret 
       type: splunk 
-      url: <http://your.splunk.hec.url:8088> 
+      url: <http://your.splunk.hec.url:8088>
+    - name: default 
+      type: elasticsearch 
+      url: <https://elasticsearch.openshift-logging.svc:9200> 
   pipelines: 
     - inputRefs:
         - application
         - infrastructure
-      name: 
+      name: forward-to-splunk
       outputRefs:
-        - splunk-receiver 
+        - splunk-receiver
+    - inputRefs:
+        - application
+        - infrastructure
+      name: forward-to-internal-es
+      outputRefs:
+        - default
+
