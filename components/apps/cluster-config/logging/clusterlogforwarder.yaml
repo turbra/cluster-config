@@ -9,7 +9,7 @@ spec:
       secret:
         name: vector-splunk-secret 
       type: splunk 
-      url: http://splunk-standalone-sample-standalone-service.splunk-operator.svc.cluster.local:8088
+      url: http://splunk-standalone-sample-standalone-service.splunk-operator.svc:8088
     - name: default 
       type: elasticsearch 
       url: https://elasticsearch.openshift-logging.svc:9200 
