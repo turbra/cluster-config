@@ -9,10 +9,10 @@ spec:
       secret:
         name: vector-splunk-secret 
       type: splunk 
-      url: <http://your.splunk.hec.url:8088>
+      url: http://hec-splunk-operator.apps.cluster-89t9v.89t9v.sandbox1014.opentlc.com
     - name: default 
       type: elasticsearch 
-      url: <https://elasticsearch.openshift-logging.svc:9200> 
+      url: https://elasticsearch.openshift-logging.svc:9200 
   pipelines: 
     - inputRefs:
         - application
