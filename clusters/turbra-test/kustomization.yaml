@@ -6,6 +6,7 @@ resources:
 #- ../../components/argocd/container-security
 - ../../components/argocd/acs
 - ../../components/argocd/banner
+- ../../components/argocd/console-link
 #- ../../components/argocd/namespace
 - ../../components/argocd/defrag-etcd
 #- ../../components/argocd/monitoring/overlays/aws
