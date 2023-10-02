@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
 - consolelink-acs.yaml
 - consolelink-gitlab.yaml
+- consolelink-splunk.yaml
