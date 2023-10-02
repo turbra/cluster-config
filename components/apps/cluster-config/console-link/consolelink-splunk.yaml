@@ -1,0 +1,12 @@
+apiVersion: console.openshift.io/v1
+kind: ConsoleLink
+metadata:
+  name: splunk
+spec:
+  applicationMenu:
+    imageURL: >-
+      http://splunk.example.com/en-US/splunkd/__raw/servicesNS/admin/search/static/appIcon.png
+    section: Observability
+  href: 'https://splunk.com/'
+  location: ApplicationMenu
+  text: Splunk
