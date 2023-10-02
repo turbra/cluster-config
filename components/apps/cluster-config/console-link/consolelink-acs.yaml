@@ -1,0 +1,8 @@
+apiVersion: console.openshift.io/v1
+kind: ConsoleLink
+metadata:
+  name: acs
+spec:
+  href: 'https://central-stackrox.apps.example.com/'
+  location: ApplicationMenu
+  text: Advanced Cluster Security
