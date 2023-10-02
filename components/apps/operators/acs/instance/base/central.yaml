@@ -17,8 +17,8 @@ spec:
         enabled: true
     telemetry:
       enabled: true
-    db:
-      isEnabled: Default
+    #db:
+    #  isEnabled: Default
     persistence:
       persistentVolumeClaim:
         claimName: central-db
