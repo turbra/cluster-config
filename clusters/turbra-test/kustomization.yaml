@@ -4,9 +4,9 @@ kind: Kustomization
 resources:
 #- ../../components/argocd/compliance
 #- ../../components/argocd/container-security
-#- ../../components/argocd/acs
+- ../../components/argocd/acs
 #- ../../components/argocd/banner
 #- ../../components/argocd/namespace
 #- ../../components/argocd/defrag-etcd
 #- ../../components/argocd/monitoring/overlays/aws
-- ../../components/argocd/logging
+#- ../../components/argocd/logging
