@@ -3,6 +3,10 @@ kind: ConsoleLink
 metadata:
   name: acs
 spec:
-  href: 'https://central-stackrox.apps.example.com/'
+  applicationMenu:
+    imageURL: >-
+      https://central-stackrox.apps.example.com/static/assets/redhat.svg
+    section: OpenShift ACS
+  href: 'https://central-stackrox.apps.example.com/
   location: ApplicationMenu
   text: Advanced Cluster Security
