@@ -5,7 +5,7 @@ metadata:
 spec:
   applicationMenu:
     imageURL: >-
-      http://splunk.example.com/en-US/splunkd/__raw/servicesNS/admin/search/static/appIcon.png
+      http://splunk.example.com/en-US/static/@5C5D93090969A86C6C6E3BFD311DBA9A370FE229F229A5CE9664AFBF476DE899.4/img/favicon.ico
     section: Observability
   href: 'https://splunk.com/'
   location: ApplicationMenu
