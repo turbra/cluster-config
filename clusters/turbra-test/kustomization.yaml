@@ -6,7 +6,6 @@ resources:
 #- ../../components/argocd/container-security
 - ../../components/argocd/acs
 - ../../components/argocd/console-link
-#- ../../components/argocd/clusterresource-override
 #- ../../components/argocd/banner
 #- ../../components/argocd/namespace
 #- ../../components/argocd/defrag-etcd
