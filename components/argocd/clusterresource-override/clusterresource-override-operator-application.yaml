@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: clusterresourceoverride-operator
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: 'https://kubernetes.default.svc'
+  project: cluster-config
+  source:
+    path: components/apps/operators/clusterresource-override/overlays/latest
+    repoURL: https://github.com/turbra/cluster-config.git
+    targetRevision: master
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
