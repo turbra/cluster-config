@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   annotations:
     openshift.io/display-name: ClusterResourceOverride Operator
-  name: clusterresourceoverride-operator
+  name: ClusterResourceOverride Operator
