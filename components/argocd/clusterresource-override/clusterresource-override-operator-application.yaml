@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: cluster-config
   source:
-    path: components/apps/operators/clusterresource-override/overlays/latest
+    path: components/apps/operators/clusterresource-override/operator/overlays/latest
     repoURL: https://github.com/turbra/cluster-config.git
     targetRevision: master
   syncPolicy:
