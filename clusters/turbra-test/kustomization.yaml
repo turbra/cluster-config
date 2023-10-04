@@ -7,7 +7,6 @@ resources:
 - ../../components/argocd/acs
 - ../../components/argocd/banner
 - ../../components/argocd/console-link
-#- ../../components/argocd/clusterresource-override
 #- ../../components/argocd/namespace
 - ../../components/argocd/defrag-etcd
 #- ../../components/argocd/monitoring/overlays/aws
