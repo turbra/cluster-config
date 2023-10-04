@@ -6,5 +6,5 @@ spec:
   podResourceOverride:
     spec:
       cpuRequestToLimitPercent: 1
-      limitCPUToMemoryPercent: 400
+      limitCPUToMemoryPercent: 300
       memoryRequestToLimitPercent: 5
