@@ -4,6 +4,7 @@ metadata:
   name: init-acs
   namespace: stackrox
   annotations:
+    argocd.argoproj.io/sync-wave: "3"
     argocd.argoproj.io/hook: PostSync
     argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
 spec:
