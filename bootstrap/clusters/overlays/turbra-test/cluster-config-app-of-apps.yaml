@@ -11,7 +11,7 @@ spec:
   source:
     path: clusters/turbra-test/
     repoURL: https://github.com/turbra/cluster-config.git
-    targetRevision: master
+    targetRevision: lab
   syncPolicy:
     automated:
       prune: true
