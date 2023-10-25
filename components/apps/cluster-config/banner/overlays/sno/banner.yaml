@@ -1,0 +1,12 @@
+apiVersion: console.openshift.io/v1
+kind: ConsoleNotification
+metadata:
+  name: banner
+spec:
+  text: "SNO Lab"
+  location: BannerTop
+  color: '#fff'
+  backgroundColor: 'FF5F1F'
+  link:
+    href: https://github.com/turbra/cluster-config
+    text: "cluster-config"
