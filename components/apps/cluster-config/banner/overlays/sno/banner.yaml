@@ -6,7 +6,7 @@ spec:
   text: "SNO Lab"
   location: BannerTop
   color: '#fff'
-  backgroundColor: '#FF5F1F'
+  backgroundColor: '#F28C28'
   link:
     href: https://github.com/turbra/cluster-config
     text: "cluster-config"
