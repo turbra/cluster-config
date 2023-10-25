@@ -8,5 +8,5 @@ resources:
 - ../../components/argocd/banner
 - ../../components/argocd/console-link
 #- ../../components/argocd/namespace
-#- ../../components/argocd/defrag-etcd
+- ../../components/argocd/defrag-etcd
 #- ../../components/argocd/monitoring/overlays/aws
