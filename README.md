@@ -31,7 +31,7 @@ oc apply -k bootstrap/clusters/overlays/<cluster-name>
 
 
 # Application tiles
-![alt text](https://raw.githubusercontent.com/caseyrobb/cluster-config/master/argotiles.png)
+![alt text](https://github.com/turbra/cluster-config/blob/lab/docs/img/argotiles.png)
 
 ## App of Apps
-![alt text](https://raw.githubusercontent.com/caseyrobb/cluster-config/master/appofapps.png)
+![alt text](https://github.com/turbra/cluster-config/blob/lab/docs/img/appofapps.png)
