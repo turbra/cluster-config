@@ -1,13 +1,14 @@
-# Note this is resource reduced, this should not be taken as a production ready installation
-# Note the db block is configured to use lower than recommended resource requests and limits, please adjust for production use.
-# https://docs.openshift.com/acs/4.2/installing/acs-default-requirements.html
 apiVersion: platform.stackrox.io/v1alpha1
 kind: Central
 metadata:
+  name: central
+  namespace: stackrox
   annotations:
     argocd.argoproj.io/sync-wave: "1"
-  name: central
 spec:
+  monitoring:
+    openshift:
+      enabled: true
   central:
     exposure:
       loadBalancer:
@@ -17,15 +18,13 @@ spec:
         enabled: false
       route:
         enabled: true
+    telemetry:
+      enabled: true
     db:
-      resources:
-        limits:
-          cpu: '2'
-          memory: 4Gi
-        requests:
-          cpu: '1'
-          memory: 2Gi
       isEnabled: Default
+      persistence:
+        persistentVolumeClaim:
+          claimName: central-db
     persistence:
       persistentVolumeClaim:
         claimName: stackrox-db
@@ -37,5 +36,4 @@ spec:
         autoScaling: Enabled
         maxReplicas: 5
         minReplicas: 2
-        replicas: 2
-    scannerComponent: Enabled
+        replicas: 3
