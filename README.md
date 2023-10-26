@@ -1,6 +1,8 @@
 # GitOps cluster-config
 
-This repo contains cluster configurations that I use in my OpenShift clusters.  It is loosely based off of Gerald Nunn's [Standards](https://github.com/gnunn-gitops/standards).
+This repository contains the configurations I utilize for my OpenShift clusters, taking cues from Gerald Nunn's [Standards](https://github.com/gnunn-gitops/standards). 
+
+For more insights into OpenShift GitOps and Kustomize, check out Mark Roberts blog post [Your Guide to Continuous Delivery with OpenShift GitOps and Kustomize](https://cloud.redhat.com/blog/your-guide-to-continuous-delivery-with-openshift-gitops-and-kustomize).
 
 # How it works
 
