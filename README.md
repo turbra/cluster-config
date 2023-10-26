@@ -11,13 +11,6 @@ Configuration for individual clusters is located in `bootstrap/clusters/overlays
 The `components/apps` directory houses the `cluster-config` and `operators` subdirectories. These subdirectories store custom configurations for tasks such as day2 operations setup and the deployment of operators. Meanwhile, the `components/argocd` directory holds configurations that will showcase your `apps` and/or `operators` (as referenced earlier) within ArgoCD.
 
 
-
-# Application tiles
-![alt text](https://raw.githubusercontent.com/caseyrobb/cluster-config/master/argotiles.png)
-
-## App of Apps
-![alt text](https://raw.githubusercontent.com/caseyrobb/cluster-config/master/appofapps.png)
-
 # Install OpenShift GitOps
 
 ```
@@ -37,4 +30,8 @@ oc apply -k bootstrap/clusters/overlays/<cluster-name>
 ```
 
 
+# Application tiles
+![alt text](https://raw.githubusercontent.com/caseyrobb/cluster-config/master/argotiles.png)
 
+## App of Apps
+![alt text](https://raw.githubusercontent.com/caseyrobb/cluster-config/master/appofapps.png)
