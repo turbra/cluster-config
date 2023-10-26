@@ -4,7 +4,9 @@ This repo contains cluster configurations that I use in my OpenShift clusters.  
 
 # How it works
 
-The `apps` directory houses the `cluster-config` and `operators` subdirectories. These subdirectories store custom configurations for tasks such as day2 operations setup and the deployment of operators. Meanwhile, the `argocd` directory holds configurations that will showcase your `apps` and/or `operators` (as referenced earlier) within ArgoCD.
+Configuration for individual clusters is located in `bootstrap/clusters/overlays`. To deploy a cluster's configuration, set up an Argo CD application in `components/argocd/{appconfig}` targeting `bootstrap/clusters/overlays/{clustername}`.
+
+The `components/apps` directory houses the `cluster-config` and `operators` subdirectories. These subdirectories store custom configurations for tasks such as day2 operations setup and the deployment of operators. Meanwhile, the `components/argocd` directory holds configurations that will showcase your `apps` and/or `operators` (as referenced earlier) within ArgoCD.
 
 
 
@@ -32,22 +34,5 @@ vi clusters/<cluster-name>/kustomization.yaml
 oc apply -k bootstrap/clusters/overlays/<cluster-name>
 ```
 
-# Updating Cluster Configuration
-
-If you've made changes to the `kustomization.yaml` file for a specific cluster, it's essential to apply those updates to ensure the cluster configuration reflects the adjustments.
-
-1. Navigate to the root directory of your repository:
-
-   ```bash
-   cd path_to_your_repository_root
-   ```
-
-2. Apply the changes using the following command, replacing `<cluster-name>` with the name of your cluster:
-
-   ```bash
-   oc apply -k clusters/<cluster-name>/
-   ```
-
-3. Monitor the output to ensure the resources are updated without any errors. If any issues arise, consult the error messages and troubleshoot accordingly.
 
 
