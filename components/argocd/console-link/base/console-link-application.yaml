@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: banner
+  name: console-link
   namespace: openshift-gitops
 spec:
   destination:
@@ -9,9 +9,9 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: cluster-config
   source:
-    path: components/apps/cluster-config/banner
+    path: PATCH_ME
     repoURL: https://github.com/turbra/cluster-config.git
-    targetRevision: master
+    targetRevision: lab
   syncPolicy:
     syncOptions:
     - ServerSideApply=true

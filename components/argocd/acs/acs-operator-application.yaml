@@ -11,7 +11,7 @@ spec:
   source:
     path: components/apps/operators/acs/aggregate/default
     repoURL: https://github.com/turbra/cluster-config.git
-    targetRevision: master
+    targetRevision: lab
   syncPolicy:
     automated:
       selfHeal: true
