@@ -1,0 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- ../../components/argocd/acs
+- ../../components/argocd/compliance
+- ../../components/argocd/container-security
+- ../../components/argocd/banner/overlays/rhpds

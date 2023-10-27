@@ -56,7 +56,7 @@ vi clusters/{cluster-name}/kustomization.yaml
 # Install app-of-apps
 
 ```
-oc apply -k bootstrap/clusters/overlays/<cluster-name>
+oc apply -k bootstrap/clusters/overlays/{cluster-name}
 ```
 ## Workflow Summary
 

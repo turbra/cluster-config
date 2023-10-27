@@ -1,0 +1,12 @@
+apiVersion: console.openshift.io/v1
+kind: ConsoleNotification
+metadata:
+  name: banner
+spec:
+  text: "RHPDS Lab"
+  location: BannerTop
+  color: '#fff'
+  backgroundColor: '#FF0000'
+  link:
+    href: https://github.com/turbra/cluster-config
+    text: "cluster-config"
