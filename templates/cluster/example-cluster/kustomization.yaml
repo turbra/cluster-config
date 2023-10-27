@@ -7,5 +7,5 @@ resources:
 - ../../components/argocd/console-link/overlays/example-cluster
 #- ../../components/argocd/compliance
 #- ../../components/argocd/container-security
-#- ../../components/argocd/defrag-etcd/overlays/sno
+#- ../../components/argocd/defrag-etcd/sno
 #- ../../components/argocd/monitoring/overlays/aws
