@@ -5,3 +5,4 @@ resources:
 - ../../components/argocd/acs
 - ../../components/argocd/compliance
 - ../../components/argocd/container-security
+- ../../components/argocd/banner/overlays/rhpds
