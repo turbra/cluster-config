@@ -8,7 +8,6 @@ resources:
 - ../../components/argocd/banner/overlays/proxmox
 - ../../components/argocd/console-link/overlays/proxmox
 #- ../../components/argocd/banner
-#- ../../components/argocd/namespace
 #- ../../components/argocd/defrag-etcd
 #- ../../components/argocd/monitoring/overlays/aws
 #- ../../components/argocd/logging
