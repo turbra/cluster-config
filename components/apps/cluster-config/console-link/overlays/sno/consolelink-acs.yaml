@@ -5,8 +5,8 @@ metadata:
 spec:
   applicationMenu:
     imageURL: >-
-      https://console-openshift-console.apps.july.hyperv.lab/static/assets/redhat.svg
+      https://console-openshift-console.apps.hub.turbra.lab/static/assets/redhat.svg
     section: OpenShift ACS
-  href: 'https://central-stackrox.apps.july.hyperv.lab/'
+  href: 'https://central-stackrox.apps.hub.turbra.lab/'
   location: ApplicationMenu
   text: Advanced Cluster Security
