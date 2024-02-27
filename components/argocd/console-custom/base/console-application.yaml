@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: custom-console
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: 'https://kubernetes.default.svc'
+  project: cluster-config
+  source:
+    path: PATCH_ME
+    repoURL: https://github.com/turbra/cluster-config.git
+    targetRevision: lab
+  syncPolicy:
+    syncOptions:
+    - ServerSideApply=true
+    - Validate=false
+    automated:
+      selfHeal: true
+      prune: true
