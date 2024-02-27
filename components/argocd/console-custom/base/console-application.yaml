@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: custom-console
+  name: console-custom
   namespace: openshift-gitops
 spec:
   destination:
