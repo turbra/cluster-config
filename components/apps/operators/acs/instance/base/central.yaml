@@ -25,6 +25,12 @@ spec:
       persistence:
         persistentVolumeClaim:
           claimName: central-db
+      resources:
+        limits:
+          memory: 2Gi
+        requests:
+          cpu: 500m
+          memory: 512Mi
     persistence:
       persistentVolumeClaim:
         claimName: stackrox-db
@@ -33,7 +39,7 @@ spec:
   scanner:
     analyzer:
       scaling:
-        autoScaling: Enabled
-        maxReplicas: 5
-        minReplicas: 2
-        replicas: 3
+        autoScaling: Disabled
+        #maxReplicas: 5
+        #minReplicas: 2
+        replicas: 2
