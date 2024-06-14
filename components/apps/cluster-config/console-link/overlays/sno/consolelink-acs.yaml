@@ -7,6 +7,6 @@ spec:
     imageURL: >-
       https://console-openshift-console.apps.hub.turbra/static/assets/redhat.svg
     section: OpenShift ACS
-  href: 'https://central-stackrox.apps.hub.turbra.lab/'
+  href: 'https://central-stackrox.apps.hub.turbra/'
   location: ApplicationMenu
   text: Advanced Cluster Security
