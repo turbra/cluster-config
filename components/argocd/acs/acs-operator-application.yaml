@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: cluster-config
   source:
-    path: components/apps/operators/acs/aggregate/default
+    path: components/apps/operators/acs/aggregate/minimal
     repoURL: https://github.com/turbra/cluster-config.git
     targetRevision: lab
   syncPolicy:
