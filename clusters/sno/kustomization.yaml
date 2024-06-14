@@ -7,5 +7,6 @@ resources:
 - ../../components/argocd/acs
 - ../../components/argocd/banner/overlays/sno
 - ../../components/argocd/console-link/overlays/sno
+- ../../components/argocd/console-custom/overlays/sno
 - ../../components/argocd/defrag-etcd
 #- ../../components/argocd/monitoring/overlays/aws
