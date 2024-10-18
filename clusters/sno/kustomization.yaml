@@ -5,6 +5,7 @@ resources:
 #- ../../components/argocd/compliance
 #- ../../components/argocd/container-security
 - ../../components/argocd/acs
+- ../../components/argocd/eso
 - ../../components/argocd/banner/overlays/sno
 - ../../components/argocd/console-link/overlays/sno
 - ../../components/argocd/console-custom/overlays/sno
