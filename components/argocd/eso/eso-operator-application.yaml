@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: cluster-config
   source:
-    path: components/apps/operators/eso/aggregate/
+    path: components/apps/operators/eso/overlays/aggregate/
     repoURL: https://github.com/turbra/cluster-config.git
     targetRevision: lab
   syncPolicy:
