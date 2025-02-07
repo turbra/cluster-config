@@ -11,5 +11,5 @@ resources:
 - ../../components/argocd/console-link/overlays/sno
 - ../../components/argocd/console-custom/overlays/sno
 - ../../components/argocd/defrag-etcd
-- ../../components/argocd/openshift-pipelines
+#- ../../components/argocd/openshift-pipelines
 #- ../../components/argocd/monitoring/overlays/aws
