@@ -6,5 +6,5 @@ metadata:
 spec:
   upgradeStrategy: Default
   targetNamespaces:
-    - openshift-lightspeed
+    - openshift-operators
 
