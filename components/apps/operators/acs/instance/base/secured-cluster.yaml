@@ -15,3 +15,11 @@ spec:
       collection: KernelModule
       imageFlavor: Regular
     taintToleration: TolerateTaints
+  sensor:
+    resources:
+      requests:
+        cpu: "200m"
+        memory: "1Gi"
+      limits:
+        cpu: "2"
+        memory: "2Gi"
