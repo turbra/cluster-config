@@ -9,7 +9,7 @@ spec:
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
-  name: rhbk-operator
+  name: rhbk-operator-subscription
 spec:
   channel: stable-v26.0
   installPlanApproval: Automatic
