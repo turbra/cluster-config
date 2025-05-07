@@ -1,3 +1,5 @@
 resources:
-- operators.yaml
+- operatorgroup.yaml
+- subscription.yaml
 - keycloak.yaml
+- namespace.yaml
