@@ -13,8 +13,8 @@ spec:
     passwordSecret:
       name: sso-db-sso-user
       key: password
-  #http:
-  #  tlsSecret: sso-cert
+  http:
+    tlsSecret: sso-cert
   hostname:
     hostname: keycloak.apps.prox.turbra
   proxy:
