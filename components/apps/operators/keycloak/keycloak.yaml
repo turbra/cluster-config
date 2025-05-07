@@ -4,8 +4,8 @@ metadata:
   name: example-kc
 spec:
   instances: 1
-  ingress:
-    className: openshift-default
+  #ingress:
+  #  className: openshift-default
   db:
     vendor: postgres
     host: postgres-db
