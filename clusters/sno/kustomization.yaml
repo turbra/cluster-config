@@ -13,4 +13,4 @@ resources:
 - ../../components/argocd/defrag-etcd
 #- ../../components/argocd/openshift-pipelines
 #- ../../components/argocd/monitoring/overlays/aws
-- ../../components/argocd/keycloak
+#- ../../components/argocd/keycloak
