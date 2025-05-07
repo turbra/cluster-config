@@ -4,8 +4,9 @@ metadata:
   name: example-kc
 spec:
   instances: 1
-  #ingress:
-  #  className: openshift-default
+  ingress:
+    enabled: false
+    #className: openshift-default
   db:
     vendor: postgres
     host: postgres-db
@@ -17,8 +18,8 @@ spec:
       key: password
   http:
     tlsSecret: sso-cert
-  #hostname:
-  #  hostname: keycloak.apps.prox.turbra
+  hostname:
+    hostname: keycloak.apps.prox.turbra
   proxy:
     headers: forwarded
   resources:
