@@ -4,3 +4,5 @@ metadata:
   name: crunchy-postgres-operator
   namespace: crunchy-postgres-operator
 spec:
+  targetNamespaces:
+    - crunchy-postgres-operator
