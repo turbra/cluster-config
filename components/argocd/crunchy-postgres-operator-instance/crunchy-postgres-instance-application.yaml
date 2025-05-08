@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: cluster-config
   source:
-    path: components/apps/operators/crunchy-postgres-operator/operator/instance/overlays/testdb
+    path: components/apps/operators/crunchy-postgres-operator/instance/overlays/testdb
     repoURL: https://github.com/turbra/cluster-config.git
     targetRevision: lab
   syncPolicy:

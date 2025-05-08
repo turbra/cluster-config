@@ -1,7 +1,7 @@
 namespace: gitopsdemo-dev
 
 bases:
-  - ../../base/postgres
+  - ../../base/
 
 patchesStrategicMerge:
   - postgres-cluster.yaml
