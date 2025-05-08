@@ -6,8 +6,8 @@ namespace: openshift-operators
 resources:
   - ../../base
 
-components:
-  - ../../components/separate-namespace
+#components:
+#  - ../../components/separate-namespace
 
 patches:
   - target:
