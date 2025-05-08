@@ -1,4 +1,4 @@
-namespace: test-db
+#namespace: test-db
 
 bases:
   - ../../base/
