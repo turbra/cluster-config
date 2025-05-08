@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: crunchy-postgres-instance
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: 'https://kubernetes.default.svc'
+  project: cluster-config
+  source:
+    path: components/apps/operators/crunchy-postgres-operator/operator/instance/overlays/testdb
+    repoURL: https://github.com/turbra/cluster-config.git
+    targetRevision: lab
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
