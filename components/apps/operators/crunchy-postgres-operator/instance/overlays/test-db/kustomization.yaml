@@ -9,4 +9,5 @@ patches:
       version: v1beta1
       kind: PostgresCluster
       name: default
+      namespace: test-db
     path: postgres-cluster.yaml
