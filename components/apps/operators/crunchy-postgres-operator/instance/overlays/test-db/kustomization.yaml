@@ -3,5 +3,10 @@ namespace: gitopsdemo-dev
 bases:
   - ../../base/
 
-patchesStrategicMerge:
-  - postgres-cluster.yaml
+patches:
+  - target:
+      group: postgres-operator.crunchydata.com
+      version: v1beta1
+      kind: PostgresCluster
+      name: test-db
+    path: postgres-cluster.yaml
