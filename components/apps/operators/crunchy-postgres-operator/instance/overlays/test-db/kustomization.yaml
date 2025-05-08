@@ -1,4 +1,4 @@
-namespace: gitopsdemo-dev
+namespace: test-db
 
 bases:
   - ../../base/
