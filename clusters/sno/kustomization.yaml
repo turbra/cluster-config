@@ -14,3 +14,4 @@ resources:
 #- ../../components/argocd/openshift-pipelines
 #- ../../components/argocd/monitoring/overlays/aws
 - ../../components/argocd/keycloak
+- ../../components/argocd/crunchy-postgres-operator/overlays/v5
