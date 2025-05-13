@@ -5,6 +5,4 @@ metadata:
   namespace: openshift-lightspeed
 spec:
   upgradeStrategy: Default
-  targetNamespaces:
-    - openshift-operators
 
