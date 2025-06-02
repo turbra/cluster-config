@@ -1,29 +1,22 @@
-apiVersion: "logging.openshift.io/v1"
-kind: "ClusterLogForwarder"
+apiVersion: observability.openshift.io/v1
+kind: ClusterLogForwarder
 metadata:
-  name: "instance" 
-  namespace: "openshift-logging" 
+  name: instance
+  namespace: openshift-logging
 spec:
+  serviceAccount:
+    name: logcollector
   outputs:
-    - name: splunk-receiver 
-      secret:
-        name: vector-splunk-secret 
-      type: splunk 
-      url: http://splunk-standalone-sample-standalone-service.splunk-operator.svc:8088
-    - name: default 
-      type: elasticsearch 
-      url: https://elasticsearch.openshift-logging.svc:9200 
-  pipelines: 
-    - inputRefs:
-        - application
-        - infrastructure
-      name: forward-to-splunk
-      outputRefs:
-        - splunk-receiver
-    - inputRefs:
-        - application
-        - infrastructure
-      name: forward-to-internal-es
-      outputRefs:
-        - default
+  - name: splunk-hec
+    type: splunk
+    splunk:
+      url: http://192.168.1.2:8088
+      authentication:
+        token:
+          secretName: vector-splunk-secret
+          key: hecToken
+  pipelines:
+  - name: all-to-splunk
+    inputRefs:     [application, infrastructure, audit]
+    outputRefs:    [splunk-hec]
 
